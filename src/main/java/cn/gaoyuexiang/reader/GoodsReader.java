@@ -11,4 +11,8 @@ public class GoodsReader extends FileReader {
     public GoodsReader(String fileName) {
         super(fileName, DEF_FILE);
     }
+
+    public GoodsReader() {
+        super(DEF_FILE, DEF_FILE);
+    }
 }

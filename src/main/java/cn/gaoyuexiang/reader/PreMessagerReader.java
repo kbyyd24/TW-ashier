@@ -11,4 +11,8 @@ public class PreMessagerReader extends FileReader {
     public PreMessagerReader(String fileName) {
         super(fileName, DEF_FILE);
     }
+
+    public PreMessagerReader() {
+        super(DEF_FILE, DEF_FILE);
+    }
 }
