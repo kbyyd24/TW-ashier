@@ -7,7 +7,7 @@ import java.util.List;
  * Project : TW-ashier
  * 优惠信息对象
  */
-public class PreferentialMessager {
+public class PreMessager {
     //优惠类型
     private String type;
     //优惠商品条形码
