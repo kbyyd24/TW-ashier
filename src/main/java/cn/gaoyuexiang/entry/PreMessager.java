@@ -28,4 +28,12 @@ public class PreMessager {
     public void setBarcodes(List<String> barcodes) {
         this.barcodes = barcodes;
     }
+
+    @Override
+    public String toString() {
+        return "PreMessager{" +
+                "type='" + type + '\'' +
+                ", barcodes=" + barcodes +
+                '}';
+    }
 }

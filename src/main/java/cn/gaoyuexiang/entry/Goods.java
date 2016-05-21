@@ -66,4 +66,16 @@ public class Goods {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "Goods{" +
+                "barcode='" + barcode + '\'' +
+                ", name='" + name + '\'' +
+                ", unit='" + unit + '\'' +
+                ", category='" + category + '\'' +
+                ", subCategory='" + subCategory + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
