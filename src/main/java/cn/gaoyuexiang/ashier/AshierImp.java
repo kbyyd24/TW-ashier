@@ -1,8 +1,10 @@
 package cn.gaoyuexiang.ashier;
 
+import cn.gaoyuexiang.entry.Cart;
 import cn.gaoyuexiang.exception.GoodsNotFoundException;
+import cn.gaoyuexiang.shop.Ticket;
 
-import java.io.FileNotFoundException;
+import java.util.ArrayList;
 
 /**
  * Created by melo on 2016/05/21.
@@ -10,15 +12,7 @@ import java.io.FileNotFoundException;
  * implement interface Ashier
  */
 public class AshierImp implements Ashier {
-    public void beginWork(String goodsInfoFile, String preferentialGoodsFile) throws FileNotFoundException {
-
-    }
-
-    public void beginWork() throws FileNotFoundException {
-
-    }
-
-    public String checkout(String cart) throws GoodsNotFoundException {
+    public Ticket checkout(ArrayList<Cart> carts) throws GoodsNotFoundException {
         return null;
     }
 }
