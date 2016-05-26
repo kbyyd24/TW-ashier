@@ -1,13 +1,10 @@
 package cn.gaoyuexiang.ashier;
 
-import cn.gaoyuexiang.entry.Cart;
-import cn.gaoyuexiang.shop.Shop;
 import cn.gaoyuexiang.exception.GoodsNotFoundException;
-import cn.gaoyuexiang.shop.Ticket;
+import cn.gaoyuexiang.dto.Ticket;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
+
 
 /**
  * Created by melo on 2016/05/21.
@@ -17,11 +14,20 @@ import java.util.ArrayList;
 public interface Ashier {
 
     /**
+     * 加载商品信息
+     * @param goodsInfoFile 所有商品信息的保存文件
+     * @param onSaleInfoFile 优惠信息
+     * @throws IOException
+     */
+    void loadLists(String goodsInfoFile, String onSaleInfoFile) throws IOException;
+    void loadLists() throws IOException;
+
+    /**
      * 结帐方法
      * @param cart 账单信息
      * @return 格式化的小票字符串
      * @throws GoodsNotFoundException
      */
-    Ticket checkout(ArrayList<Cart> carts)
+    String checkout(String[] cart)
             throws GoodsNotFoundException;
 }
