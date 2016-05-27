@@ -14,7 +14,7 @@ public class Ticket {
     /*优惠的价格*/
     private double prePrice;
     /*商品列表*/
-    private HashMap<String, Production> items;
+    private HashMap<String, Production> items = new HashMap<String, Production>();
 
     /**
      * 添加商品到小票，同时更新总价
