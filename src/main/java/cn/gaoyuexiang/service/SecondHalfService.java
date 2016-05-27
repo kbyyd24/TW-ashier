@@ -20,6 +20,8 @@ public class SecondHalfService implements AshierService {
     public Ticket checkout(ArrayList<Goods> goodsList, ArrayList<OnSaleMsg> onSaleList, String[] cart)
             throws GoodsNotFoundException {
         Ticket ticket = new Ticket();
+        if (goodsList == null || onSaleList == null)
+            throw new GoodsNotFoundException("Not loaded information files");
         HashMap<String, Goods> goodsMap = listToMap(goodsList);
         List<String> onSaleBarcodes = getOnSaleBarcodes(onSaleList);
 

@@ -54,4 +54,19 @@ public class SecondHalfAshierTest {
         }
     }
 
+    /**
+     * 测试未加载商品信息时进行结算的结果
+     */
+    @Test
+    public void ckeckoutWithoutLoad() {
+        Ashier errorAshier = new SecondHalfAshier();
+        String[] cart = new String[]{"ITEM000001-4"};
+        try {
+            String ticket = errorAshier.checkout(cart);
+            System.out.println(ticket);
+        } catch (GoodsNotFoundException e) {
+            System.err.println(e.getMessage());
+        }
+    }
+
 }
