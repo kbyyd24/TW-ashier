@@ -9,10 +9,18 @@ import java.util.HashMap;
  * Project : TW-ashier
  */
 public class Ticket {
+    /*实际支付价格*/
     private double allPrice;
+    /*优惠的价格*/
     private double prePrice;
+    /*商品列表*/
     private HashMap<String, Production> items;
 
+    /**
+     * 添加商品到小票，同时更新总价
+     * @param goods 商品信息
+     * @param isOnSale 是否优惠
+     */
     public void addGoods(Goods goods, boolean isOnSale) {
         if (items.containsKey(goods.getBarcode())) {
             String barcode = goods.getBarcode();
@@ -28,15 +36,20 @@ public class Ticket {
         }
     }
 
+    /**
+     * 更新总价
+     * @param goods 商品
+     */
     private void updatePrice(Production goods) {
         double price = goods.getPrice();
-         if (goods.getNumber() % 2 == 0) {
+         if (goods.getNumber() % 2 == 0 && goods.isOnSale()) {
              allPrice += price / 2;
              prePrice += price / 2;
          } else {
              allPrice += price;
          }
     }
+
 
     public double getAllPrice() {
         return allPrice;
