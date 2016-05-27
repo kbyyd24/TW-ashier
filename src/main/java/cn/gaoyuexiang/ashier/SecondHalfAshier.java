@@ -69,7 +69,8 @@ public class SecondHalfAshier implements Ashier {
             strTicket += "单价 : " + production.getPrice() + "(元)";
             if (production.isOnSale()) {
                 strTicket += ", 优惠 : " + production.getPrePrice() + "(元)";
-                onSaleTicket += "名称 : " + production.getName() + ", 数量 : " + production.getPreNumber() + "\n";
+                onSaleTicket += "名称 : " + production.getName()
+                        + ", 数量 : " + production.getPreNumber() + production.getUnit() + "\n";
             }
             strTicket += "\n";
         }
