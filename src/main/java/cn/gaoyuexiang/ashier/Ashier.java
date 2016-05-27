@@ -1,7 +1,6 @@
 package cn.gaoyuexiang.ashier;
 
 import cn.gaoyuexiang.exception.GoodsNotFoundException;
-import cn.gaoyuexiang.dto.Ticket;
 
 import java.io.IOException;
 
@@ -9,7 +8,7 @@ import java.io.IOException;
 /**
  * Created by melo on 2016/05/21.
  * Project : TW-ashier
- * interface to use ashier
+ * 收银台接口
  */
 public interface Ashier {
 

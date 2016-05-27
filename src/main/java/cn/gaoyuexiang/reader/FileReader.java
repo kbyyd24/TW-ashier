@@ -10,13 +10,14 @@ import java.util.ArrayList;
 /**
  * Created by melo on 2016/05/21.
  * Project : TW-ashier
+ * 文件读取类，实现 read 方法
  */
-public class FileReader implements Reader {
+class FileReader implements Reader {
 
     private String fileName;
     private String defFile;
 
-    public FileReader(String fileName, String defFile) {
+    FileReader(String fileName, String defFile) {
         this.fileName = fileName;
         this.defFile = defFile;
     }

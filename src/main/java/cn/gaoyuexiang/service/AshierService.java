@@ -5,12 +5,12 @@ import cn.gaoyuexiang.entry.Goods;
 import cn.gaoyuexiang.entry.OnSaleMsg;
 import cn.gaoyuexiang.exception.GoodsNotFoundException;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
 /**
  * Created by melo on 2016/05/21.
  * Project : TW-ashier
+ * 收银台计算服务接口
  */
 public interface AshierService {
 

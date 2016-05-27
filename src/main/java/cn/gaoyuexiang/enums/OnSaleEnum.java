@@ -2,6 +2,7 @@ package cn.gaoyuexiang.enums;
 
 /**
  * Created by melo on 16-5-27.
+ * 优惠类型的枚举，方便扩展
  */
 public enum OnSaleEnum {
 

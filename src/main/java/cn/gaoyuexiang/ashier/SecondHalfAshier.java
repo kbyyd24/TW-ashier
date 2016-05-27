@@ -18,7 +18,7 @@ import java.util.Collection;
 /**
  * Created by melo on 2016/05/21.
  * Project : TW-ashier
- * implement interface Ashier
+ * 第二个半价收银台
  */
 public class SecondHalfAshier implements Ashier {
     /*商品信息列表*/

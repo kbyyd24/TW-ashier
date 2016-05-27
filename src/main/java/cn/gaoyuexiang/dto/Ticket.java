@@ -7,6 +7,7 @@ import java.util.HashMap;
 /**
  * Created by melo on 2016/05/21.
  * Project : TW-ashier
+ * 结算小票，保存打印小票需要的信息
  */
 public class Ticket {
     /*实际支付价格*/

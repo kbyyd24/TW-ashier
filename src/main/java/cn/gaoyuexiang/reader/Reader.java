@@ -6,6 +6,7 @@ import java.util.ArrayList;
 /**
  * Created by melo on 2016/05/21.
  * Project : TW-ashier
+ * 加载文件内容的接口
  */
 public interface Reader {
 

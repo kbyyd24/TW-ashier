@@ -2,6 +2,7 @@ package cn.gaoyuexiang.dto;
 
 /**
  * Created by melo on 16-5-26.
+ * 小票中保存的商品信息
  */
 public class Production {
     /*商品名称*/
