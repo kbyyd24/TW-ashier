@@ -7,7 +7,7 @@ import java.util.List;
  * Project : TW-ashier
  * 优惠信息对象
  */
-public class PreMessager {
+public class OnSaleMsg {
     //优惠类型
     private String type;
     //优惠商品条形码
@@ -31,7 +31,7 @@ public class PreMessager {
 
     @Override
     public String toString() {
-        return "PreMessager{" +
+        return "OnSaleMsg{" +
                 "type='" + type + '\'' +
                 ", barcodes=" + barcodes +
                 '}';
