@@ -1,14 +1,11 @@
 package cn.gaoyuexiang.service;
 
-import cn.gaoyuexiang.ashier.Ashier;
-import cn.gaoyuexiang.dto.Production;
 import cn.gaoyuexiang.dto.Ticket;
 import cn.gaoyuexiang.entry.Goods;
 import cn.gaoyuexiang.entry.OnSaleMsg;
 import cn.gaoyuexiang.enums.OnSaleEnum;
 import cn.gaoyuexiang.exception.GoodsNotFoundException;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -51,7 +48,7 @@ public class SecondHalfService implements AshierService {
     private List<String> getOnSaleBarcodes(ArrayList<OnSaleMsg> onSaleList) {
         for (OnSaleMsg msg :
                 onSaleList) {
-            if (msg.getType().equals(OnSaleEnum.BUY_SECOND_GET_HALF_PRICE))
+            if (msg.getType().equals(OnSaleEnum.BUY_SECOND_GET_HALF_PRICE.getOnSaleMsg()))
                 return msg.getBarcodes();
         }
         return null;
