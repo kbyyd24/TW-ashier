@@ -3,6 +3,7 @@ package cn.gaoyuexiang.service;
 import cn.gaoyuexiang.dto.Ticket;
 import cn.gaoyuexiang.entry.Goods;
 import cn.gaoyuexiang.entry.OnSaleMsg;
+import cn.gaoyuexiang.exception.GoodsNotFoundException;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -20,5 +21,5 @@ public interface AshierService {
      * @param cart 购物车商品列表
      * @return 结算出的小票
      */
-    Ticket checkout(ArrayList<Goods> goodsList, ArrayList<OnSaleMsg> onSaleList, String[] cart);
+    Ticket checkout(ArrayList<Goods> goodsList, ArrayList<OnSaleMsg> onSaleList, String[] cart) throws GoodsNotFoundException;
 }
