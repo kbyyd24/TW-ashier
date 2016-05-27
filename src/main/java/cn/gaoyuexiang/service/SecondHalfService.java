@@ -27,7 +27,7 @@ public class SecondHalfService implements AshierService {
                 cart) {
             Goods goods = goodsMap.get(barcode);
             if (goods == null)
-                throw new GoodsNotFoundException();
+                throw new GoodsNotFoundException(barcode + " not found!");
             if (onSaleBarcodes != null && onSaleBarcodes.contains(barcode))
                 ticket.addGoods(goods, true);
             else
