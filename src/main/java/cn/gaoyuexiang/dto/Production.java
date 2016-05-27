@@ -29,6 +29,7 @@ public class Production {
     public void addOne() {
         this.number ++;
         this.preNumber = this.number / 2;
+        this.prePrice = this.preNumber * this.price / 2;
     }
 
     public String getName() {
